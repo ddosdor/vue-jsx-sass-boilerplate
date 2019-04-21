@@ -1,0 +1,63 @@
+{
+  "name": "vue-jsx-sass-boilerplate",
+  "version": "0.0.1",
+  "main": "mainx.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "bnr start-dev",
+    "dev": "bnr start-dev",
+    "prod": "bnr start-prod",
+    "build": "bnr start-prod",
+    "review": "bnr start-review"
+  },
+  "betterScripts": {
+    "start-dev": {
+      "command": "webpack-dev-server --config config/webpack.config.js",
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": "3003"
+      }
+    },
+    "start-review": {
+      "command": "webpack --config config/webpack.config.js",
+      "env": {
+        "NODE_ENV": "review"
+      }
+    },
+    "start-prod": {
+      "command": "webpack --config config/webpack.config.js",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.0",
+    "@babel/plugin-syntax-jsx": "^7.2.0",
+    "@babel/preset-env": "^7.4.1",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "better-npm-run": "^0.1.1",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-react": "^7.12.4",
+    "html-loader": "^0.5.5",
+    "jest": "^24.7.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "compression-webpack-plugin": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "inferno": "^7.1.11",
+    "inferno-hyperscript": "^7.1.11",
+    "vue": "^2.6.10"
+  }
+}
