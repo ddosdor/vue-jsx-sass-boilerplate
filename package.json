@@ -4,7 +4,6 @@
   "main": "main.js",
   "license": "MIT",
   "scripts": {
-    "heroku-prebuild": "yarn add --dev",
     "start": "bnr start-heroku",
     "dev": "bnr start-dev",
     "serve": "bnr start-dev",
