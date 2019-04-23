@@ -11,9 +11,11 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.json'],
+    extensions: ['.js', '.jsx', '.json', '.sass', '.png'],
     alias: {
       '@': resolve('../src'),
+      '@images': resolve('../src/assets/images'),
+      '@styles': resolve('../src/assets/styles'),
     },
   },
   plugins,

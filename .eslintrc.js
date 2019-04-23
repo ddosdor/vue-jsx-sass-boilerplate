@@ -3,6 +3,7 @@ module.exports = {
         "browser": true,
         "es6": true
     },
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
         "jsx": true
@@ -10,7 +11,6 @@ module.exports = {
     },
     "extends": [
         "airbnb-base",
-        "plugin:react/recommended"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -40,7 +40,6 @@ module.exports = {
         }],
         "indent": "off",
         "class-methods-use-this": "off",
-        "react/prop-types": "off",
-        "react/react-in-jsx-scope": "off"
+        "dot-notation": "off",
     }
 };
