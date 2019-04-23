@@ -6,8 +6,8 @@
   "scripts": {
     "start": "bnr start-dev",
     "dev": "bnr start-dev",
-    "prod": "bnr start-prod",
-    "build": "bnr start-prod",
+    "prod": "shell-exec 'bnr start-prod'",
+    "build": "shell-exec 'bnr start-prod'",
     "review": "bnr start-review"
   },
   "betterScripts": {
