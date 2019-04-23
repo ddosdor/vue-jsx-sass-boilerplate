@@ -22,7 +22,7 @@ yarn install
 and
 
 ```
-yarn serve
+yarn start
 ```
 
 ## What's next?
