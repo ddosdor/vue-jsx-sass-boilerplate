@@ -4,8 +4,10 @@
   "main": "main.js",
   "license": "MIT",
   "scripts": {
-    "start": "bnr start-dev",
+    "heroku-prebuild": "yarn add --dev",
+    "start": "bnr start-heroku",
     "dev": "bnr start-dev",
+    "serve": "bnr start-dev",
     "prod": "bnr start-prod",
     "build": "bnr start-prod",
     "review": "bnr start-review"
@@ -18,6 +20,13 @@
         "PORT": "3003"
       }
     },
+    "start-heroku": {
+      "command": "webpack-dev-server --config config/webpack.config.js",
+      "env": {
+        "NODE_ENV": "production",
+        "PORT": "3003"
+      }
+    },    
     "start-review": {
       "command": "webpack --config config/webpack.config.js",
       "env": {
@@ -43,6 +52,7 @@
     "@vue/babel-preset-jsx": "^1.0.0-beta.3",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
+    "better-npm-run": "^0.1.1",
     "css-loader": "^2.1.1",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
@@ -59,7 +69,6 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
-    "better-npm-run": "^0.1.1",
     "compression-webpack-plugin": "^2.0.0",
     "html-webpack-plugin": "^3.2.0",
     "string-types": "^1.0.1",
