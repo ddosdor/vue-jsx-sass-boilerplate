@@ -11,6 +11,8 @@ For pure fun and verification of what else you can resurrect with Vue.
 
 From here. :)
 
+Demo on Heroku - https://vue-jsx-sass-boilerplate.herokuapp.com/
+
 ## How to use this?
 
 Clone this repo and:
